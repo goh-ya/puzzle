@@ -21,9 +21,9 @@
 html, body {
   width: 100%;
   min-height: 100%;
-  background: #f4f1eb;
+  background: #FFEEEE;
   font-family: "Segoe UI", Roboto;
-  color: #1a1a1a;
+  color: #903952;
   overflow-x: hidden;
 }
 
@@ -62,7 +62,7 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: -0.1rem;
-  color: #111;
+  color: #65262C;
   line-height: 1.2;
   padding: 0px 16px;
 }
@@ -70,7 +70,7 @@ header h1 {
 header p {
   font-family: "Segoe UI", Roboto;
   font-size: 0.8rem;
-  color: #111;
+  color: #903952;
   margin-top: 5px;
   padding: 0px 16px;
 
@@ -105,8 +105,8 @@ header p {
   object-fit: cover;
   display: block;
   transform: scaleX(-1);
-  border: 1px solid #111;
-  background: #111;
+  border: 1px solid #65262C;
+  background: #65262C;
   position: relative;
   z-index: 1;
  
@@ -135,7 +135,7 @@ header p {
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
-  background: #1a1a1a;
+  background: #903952;
   color: #f4f1eb;
   font-family: "Segoe UI", Roboto;
   font-size: 0.8rem;
@@ -180,7 +180,7 @@ header p {
   align-items: center;
   gap: 8px;
   font-size: 0.8rem;
-  color: #666;
+  color: #65262C;
 }
 .dot {
   width: 8px; height: 8px;
@@ -189,8 +189,8 @@ header p {
   border: 1px solid #aaa;
 }
 .dot.active {
-  background: #1a1a1a;
-  border-color: #1a1a1a;
+  background: #903952;
+  border-color: #903952;
   animation: blink 1s step-start infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.15} }
@@ -213,10 +213,10 @@ button {
   font-weight: 400;
   cursor: pointer;
   padding: 9px 20px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #903952;
   border-radius: 2px;
-  background: #f4f1eb;
-  color: #1a1a1a;
+  background: rgba(144, 57, 82, 0);
+  color: #903952;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   display: inline-flex;
   align-items: center;
@@ -224,24 +224,24 @@ button {
   letter-spacing: -0.08rem;
   -webkit-tap-highlight-color: transparent;
 }
-button:hover  { transform: translate(-1px,-1px); background-color: rgba(17, 17, 17, 1);
-  border-color: #111;
+button:hover  { transform: translate(-1px,-1px); background-color: rgba(144, 57, 82, 1);
+  border-color: #903952;
   color: #fff;}
-button:active { transform: translate(2px,2px)!important; background-color: rgba(17, 17, 17, 1);
-  border-color: #111;
+button:active { transform: translate(2px,2px)!important; background-color: rgba(144, 57, 82, 1);
+  border-color: #903952;
   color: #fff; }
 
 .btn-primary {
-  background-color: rgba(17, 17, 17, 0);
-  border-color: #111;
-  color: #111;
+  background-color: rgba(144, 57, 82, 0);
+  border-color: #903952;
+  color: #903952;
 }
 .btn-primary:hover  { 
-  background-color: rgba(17, 17, 17, 1);
-  border-color: #111;
+  background-color: rgba(144, 57, 82, 1);
+  border-color: #903952;
   color: #fff; }
-.btn-primary:active { background-color: rgba(17, 17, 17, 1);
-  border-color: #111;
+.btn-primary:active { background-color: rgba(144, 57, 82, 1);
+  border-color: #903952;
   color: #fff;!important; }
 
 .btn-ghost {
@@ -249,12 +249,12 @@ button:active { transform: translate(2px,2px)!important; background-color: rgba(
   box-shadow: none;
   background: transparent;
   font-size: 0.92rem;
-  color: #888;
+  color: #903952;
   text-decoration: underline;
   text-underline-offset: 3px;
   padding: 6px 8px;
 }
-.btn-ghost:hover  { background-color: rgba(17, 17, 17, 0); color: #1a1a1a; box-shadow: none; transform: none; }
+.btn-ghost:hover  { background-color: rgba(144, 57, 82, 0); color: #903952; box-shadow: none; transform: none; }
 .btn-ghost:active { box-shadow: none!important; transform: none!important; }
 
 button:disabled { opacity: 0.32; pointer-events: none; }
@@ -288,11 +288,11 @@ button:disabled { opacity: 0.32; pointer-events: none; }
 
 #move-count {
   font-size: 1rem;
-  color: #777;
+  color: #903952;
   font-style: italic;
   letter-spacing: 0.04em;
 }
-#move-count span { color: #1a1a1a; font-weight: 700; font-style: normal; }
+#move-count span { color: #903952; font-weight: 700; font-style: normal; }
 
 /* Wrapper with sketchy border */
 #puzzle-grid-wrapper {
@@ -308,8 +308,8 @@ button:disabled { opacity: 0.32; pointer-events: none; }
   grid-template-columns: repeat(3, 100px);
   grid-template-rows:    repeat(3, 100px);
   gap: 1px;
-  background: #1a1a1a;
-  border: 1px solid #1a1a1a;
+  background: #903952;
+  border: 1px solid #903952;
   z-index: 1;
 }
 
@@ -337,21 +337,21 @@ button:disabled { opacity: 0.32; pointer-events: none; }
   -webkit-user-drag: none;
 }
 
-.puzzle-piece.selected  { outline-color: #E0FF54; opacity: 0.78; }
-.puzzle-piece.drag-over { outline: 1px dashed #E0FF54; outline-offset: -3px; }
+.puzzle-piece.selected  { outline-color: #FFBFD5; opacity: 0.78; }
+.puzzle-piece.drag-over { outline: 1px dashed #FFBFD5; outline-offset: -3px; }
 .puzzle-piece.dragging  { opacity: 0.35; }
 .puzzle-piece.correct   { animation: correctFlash 0.45s ease; }
 
 @keyframes correctFlash {
-  0%   { outline: 1px solid #E0FF54; outline-offset: -3px; }
-  50%  { outline: 1px solid #E0FF54; outline-offset: -7px; }
+  0%   { outline: 1px solid #FFBFD5; outline-offset: -3px; }
+  50%  { outline: 1px solid #FFBFD5; outline-offset: -7px; }
   100% { outline: 1px solid transparent; outline-offset: -2px; }
 }
 
 .footer {
   text-align: center;
   font-size: 0.75rem;
-  color: #111;
+  color: #903952;
   padding: 20px 10px;
   margin-top: 40px;
 }
@@ -363,7 +363,7 @@ button:disabled { opacity: 0.32; pointer-events: none; }
 #success-overlay {
   position: fixed;
   inset: 0;
-  background: #f4f1eb;
+  background: #FFEEEE;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -382,7 +382,7 @@ button:disabled { opacity: 0.32; pointer-events: none; }
   font-family: "Segoe UI", Roboto;
   font-size: 2.5rem;
   font-weight: 300;
-  color: #111;
+  color: #65262C;
   letter-spacing: -0.08em;
   animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -401,16 +401,16 @@ button:disabled { opacity: 0.32; pointer-events: none; }
 
 .success-sub {
   font-size: 0.88rem;
-  color: #111;
+  color: #65262C;
   animation: slideUp 0.4s 0.15s ease both;
 }
 
 .success-stats {
   font-size: 1rem;
-  color: #999;
+  color: #903952;
   animation: slideUp 0.4s 0.25s ease both;
 }
-.success-stats strong { color: #1a1a1a; font-size: 1.5rem}
+.success-stats strong { color: #65262C; font-size: 1.5rem}
 
 /* Confetti canvas */
 #confetti-canvas {
@@ -463,7 +463,7 @@ button:disabled { opacity: 0.32; pointer-events: none; }
     <!-- Hand-drawn wavy rule as SVG -->
     <h1>
     <!-- <img src="images/headbn.png" alt="puzzle-banner"> -->
-    <h1>Capture Your Beautiful Self Again</h1>
+    <h1>Capture the Beautiful You.</h1>
     </h1>
     <p>開啟相機後，雙手張開保持穩定 2 秒，也可自動拍照</p>
     <!-- <p id="tip-text">開啟相機後，雙手張開保持穩定 2 秒，也可自動拍照</p> -->
@@ -516,7 +516,7 @@ button:disabled { opacity: 0.32; pointer-events: none; }
   </section>
 
   <footer class="footer">
-  Copyright © 2026 Design by Gill.
+  Copyright © 2026 Design by LinyaGill.
   </footer>
 
 </div>
@@ -926,7 +926,7 @@ function startConfetti() {
   confettiCanvas.width  = window.innerWidth;
   confettiCanvas.height = window.innerHeight;
 
-  const grays  = ['#1a1a1a','#555','#888','#bbb','#f4f1eb','#ccc'];
+  const grays  = ['#903952','#555','#888','#bbb','#f4f1eb','#ccc'];
   const shapes = ['rect','line','circle'];
   const parts  = Array.from({ length: 90 }, () => ({
     x: Math.random() * confettiCanvas.width,
